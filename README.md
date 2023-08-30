@@ -1,11 +1,11 @@
 # live-codes
-Source code from programming demos at Holberton School Tulsa
+Source code from live programming demos at Holberton School Tulsa
 
 ## C
-### `posix-regex`
+### `c/posix-regex`
 
 ## C++
-### `template-metaprogramming`
+### `c++/template-metaprogramming`
 
 ## Python
-### `flask-rest-api`
+### `python/flask-rest-api`

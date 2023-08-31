@@ -52,8 +52,7 @@ main(void)
 
 	match_count = -1;
 
-	do
-	{
+	do {
 		++match_count;
 
 		write_result = RegexMatchWriter_WriteNext(

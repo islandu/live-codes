@@ -260,7 +260,7 @@ RegexMatchWriter_Free(RegexMatchWriter * writer)
 		return;
 
 	// Destroy memory mapping for search file
- 
+
 	munmap(
 		writer->file_start,
 		(size_t)(writer->file_end - writer->file_start + 1)

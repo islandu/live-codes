@@ -1,7 +1,7 @@
 # `c/posix-regex`
 
 ## Abstract
-Demonstrates regex pattern matching using the POSIX C library--a core compponent of most Unix-derived systems (e.g., Linux distros, macOS, AIX, etc.).
+Demonstrates regex pattern matching using the POSIX C library--a core component of most Unix-derived systems (e.g., Linux distros, macOS, AIX, etc.).
 
 ## Topics
 In the code you will find examples of the following:

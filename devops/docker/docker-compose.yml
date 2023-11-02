@@ -1,0 +1,19 @@
+services: # containers to build/run
+  ipgenie-server: # web server container
+    build:
+      context: ./ipgenie-server # relative path to image build directory
+      dockerfile: ./Dockerfile
+    image: ipgenie-server # image name when built
+    container_name: ipgenie-server-01 # container name
+    ports:
+      - 8080 # listen port for other containers
+  ipgenie-proxy: # proxy container
+    build:
+      context: ./ipgenie-proxy # relative path to image build directory
+      dockerfile: ./Dockerfile
+    image: ipgenie-proxy # image name when built
+    container_name: ipgenie-proxy-01 # container name
+    ports:
+      - 80:80 # port mapping to machine
+    depends_on:
+      - ipgenie-server # container(s) that must be built first

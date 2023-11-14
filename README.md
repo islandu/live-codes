@@ -11,4 +11,4 @@ Source code from live programming demos at Holberton School Tulsa. The code in t
 - `devops/docker`
 
 ## Python
-- `python/flask-rest-api`
+- `python/flask-api`

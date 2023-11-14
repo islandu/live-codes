@@ -1,4 +1,4 @@
-# `python/flask-rest-api`
+# `python/flask-api`
 
 ## Abstract
 Demonstrates the use of the `flask` python package to quickly create a simple REST API.

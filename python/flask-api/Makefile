@@ -4,7 +4,7 @@ DB_CONTAINER := notesdb-01
 .PHONY := api-run db-run db-build clean
 
 api-run: db-run
-	flask --app notes_api run
+	@./notes_api.py
 
 db-run: db-build
 	@sudo docker inspect $(DB_CONTAINER) > /dev/null \

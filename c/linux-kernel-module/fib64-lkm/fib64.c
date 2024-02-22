@@ -49,7 +49,9 @@ static struct file_operations fib64_fops = {
 };
 
 /**
- * fib64_init
+ * fib64_init - Tells the kernel what to do when our module is loaded
+ * 
+ * Return: 0 on success, negative for error
  */
 static int __init fib64_init(void)
 {

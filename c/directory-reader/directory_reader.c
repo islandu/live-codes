@@ -2,7 +2,7 @@
 #include <string.h>
 #include "directory_reader.h"
 
-int directory_reader_init(directory_reader_t *parser, const char *path)
+int directory_reader_init(directory_reader_t *parser, const char *path, int flag_all)
 {
 	DIR *dir = NULL;
 
@@ -18,6 +18,7 @@ int directory_reader_init(directory_reader_t *parser, const char *path)
 	parser->path = path;
 	parser->current_entry = NULL;
 	parser->stop = 0;
+	parser->flag_all = flag_all;
 
 	return (0);
 }

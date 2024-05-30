@@ -1,0 +1,2 @@
+siphashc==2.4.1
+sympy==1.12.1

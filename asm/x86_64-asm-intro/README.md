@@ -37,7 +37,7 @@ size_t my_strlen(const char *str)
 
 loop:
     if (!str[rcx])  /* `cmp byte[rdi+rcx], 0`, check for '\0' */
-		goto done;  /* `jz .done` */
+        goto done;  /* `jz .done` */
     ++rcx;          /* `inc rcx` */
     goto loop;      /* `jmp .loop` */
 done:

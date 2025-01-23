@@ -97,15 +97,14 @@ int longlistfmt_init(longlistfmt_t *longlist,
 void longlistfmt_print(longlistfmt_t *longlist)
 {
 	/* mode nlink user group size modified entry_name */
-	printf("%s %lu %s %s %-4lu %.*s %s\n",
+	printf("%s %lu %s %s %-4lu %.12s %s\n",
 	       longlist->mode,
 	       longlist->nlinks,
 	       longlist->user,
 	       longlist->group,
 	       longlist->size,
 	       /* trimming the \n off of ctime string */
-	       (int)strlen(longlist->modified) - 1,
-	       longlist->modified,
+	       longlist->modified + 4,
 	       longlist->entry_name
 	);
 }
